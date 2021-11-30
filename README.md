@@ -36,7 +36,8 @@ $ python3 manage.py runserver 0.0.0.0:8000
 ```
 
 ## Using `curl` to perform client request
-Ask for the result of fibonacci at N order (Remember to change N to an integer)
+Ask for the result of fibonacci at N order
+(Remember to change N to an integer)
 ```bash
 $ curl -d '{"order":N}' -X POST http://localhost:8000/rest/fibonacci
 ```
