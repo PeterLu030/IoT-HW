@@ -36,21 +36,21 @@ $ python3 manage.py runserver 0.0.0.0:8000
 ```
 
 ## Using `curl` to perform client request
-- Ask for the result of fibonacci at N order
+Ask for the result of fibonacci at N order
 ```bash
 $ curl -d '{"order":N}' -X POST http://localhost:8000/rest/fibonacci
 ```
-Or you can use `http` to send request
+- Or you can use `http` to send request
 ```bash
 $ sudo apt-get install httpie
 $ http POST http://localhost:8000/rest/fibonacci <<< '{"order":N}'
 ```
 
-- Get a list of history fibonacci requests sent before
+Get a list of history fibonacci requests sent before
 ```bash
 $ curl http://localhost:8000/rest/logs
 ```
-Or you can use `http` to send request
+- Or you can use `http` to send request
 ```bash
 $ sudo apt-get install httpie
 $ http http://localhost:8000/rest/logs
