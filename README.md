@@ -10,7 +10,7 @@ $ sudo apt-get install protobuf-compiler
 # Install buildtools
 $ sudo apt-get install build-essential make
 
-# Install grpc packages
+# Install packages
 $ pip3 install -r requirements.txt
 ```
 - Run the eclipse mosquitto docker container
